@@ -1,0 +1,26 @@
+h1 {
+    font-size: 2em;
+    margin: 20px 0 0px 0;
+    padding-left: 10px;
+}
+
+h2{    
+    font-size: 1.4em;
+    background-color:#2A3031;
+}
+
+h3{
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5{
+    font-size: 0.8em;
+}
+
+h1, h2, h3, h4, h5 {
+    color: white;
+}

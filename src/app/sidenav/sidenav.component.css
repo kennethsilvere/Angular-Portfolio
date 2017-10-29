@@ -1,0 +1,38 @@
+header {
+    background:#F1F2F3;
+    padding-left: 10%;
+}
+
+#logo {
+    color: #1ad39a;
+    font-weight:900;
+    padding: 15px 0;
+    display:block;
+}
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+ul li {
+    display:inline;
+
+}
+
+ul li a {
+    color:#3F4648;
+    padding:10px 0px;
+    display:block;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+ul li a:hover {
+    background: #1ad39a;
+}
+
+button:hover {
+    cursor: pointer;
+}
