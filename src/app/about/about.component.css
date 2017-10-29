@@ -1,14 +1,14 @@
 h1, h2, h3, h4, h5 {
+    background-color:#2A3031;
+    border-radius: 20%;
     color: white;
     margin: 20px 0 25px 0;
-    background-color:#2A3031;
     padding-left: 10px;
-    border-radius: 20%;
 }
 
 h1 {
-    font-size: 2.7em;
     background-color: #3F4648;
+    font-size: 2.7em;
 }
 
 h2{    
@@ -31,28 +31,40 @@ h5{
     width: 100px;
 }
 
+.aboutRow {
+    margin-left: -15px;
+    margin-right: -25px;
+    padding-left: -15px;
+    padding-right: -25px;
+}
+
+.aboutTitle {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.description , .closing {
+    background-color:#2A3031;
+    margin-top: 27px;
+    padding-top: 13px;
+    text-align: center;
+}
+
 .features li{
     color: white;
 }
 
-.aboutRow {
-    padding-left: -15px;
-    padding-right: -25px;
-    margin-left: -15px;
-    margin-right: -25px;
-}
-
-.aboutTitle {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.description , .closing {
-    text-align: center;
+.foot {
     margin-top: 27px;
-    padding-top: 13px;
-    background-color:#2A3031;
+    text-align: center;
 }
 
+.foot a {
+    color: white;
+}
+
+.foot a:hover {
+    color: #95989A;
+}

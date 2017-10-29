@@ -16,6 +16,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { AboutAppComponent } from './about-app/about-app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const appRoutes: Routes = [
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
     ProjectsComponent,
     ExperienceComponent,
     EducationComponent,
+    FooterComponent,
     AboutAppComponent,
     SidenavComponent
   ],
