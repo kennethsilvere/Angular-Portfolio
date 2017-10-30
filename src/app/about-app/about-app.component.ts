@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidenavService } from '../sidenav/sidenav.service';
 
 @Component({
   selector: 'app-about-app',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutAppComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sideNavService: SidenavService) { }
 
   ngOnInit() {
+    
+  }
+
+  closeNav() {
+    this.sideNavService.closeNav();
   }
 
 }

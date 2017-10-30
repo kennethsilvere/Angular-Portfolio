@@ -30,6 +30,14 @@ ul li a:hover {
     background: #1ad39a;
 }
 
+.hamburgerIcon {
+    height: 50px;
+}
+
+.side-nav {
+    margin-left: -10%;
+}
+
 #logo {
     color: #1ad39a;
     display:block;

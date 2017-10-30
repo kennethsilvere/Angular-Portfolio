@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidenavService } from './sidenav.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sideNavService: SidenavService) { }
 
   width: number;
 
@@ -15,7 +16,11 @@ export class SidenavComponent implements OnInit {
 
   ngOnInit() {
     this.width = window.innerWidth;
-    this.showNav = false;
+    this.sideNavService.sideNavButton.subscribe(
+      (showNav: boolean) => {
+        this.showNav = showNav;
+      }
+    );
   }
 
   ngOnChanges() {
@@ -23,7 +28,7 @@ export class SidenavComponent implements OnInit {
   }
 
   onShowNav() {
-    this.showNav = !this.showNav;
+    this.sideNavService.toggleSideNav();
   }
 
 }

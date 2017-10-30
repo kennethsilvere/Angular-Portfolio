@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger,state,style,transition,animate,keyframes} from '@angular/animations';
+import { SidenavService } from '../sidenav/sidenav.service';
 
 @Component({
   selector: 'app-about',
@@ -40,7 +41,7 @@ import { trigger,state,style,transition,animate,keyframes} from '@angular/animat
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sideNavService: SidenavService) { }
 
   ngOnInit() {
     this.h2State = 'h2';
@@ -55,6 +56,8 @@ export class AboutComponent implements OnInit {
   h4State: string ='';
   h5State: string ='';
 
-  
+  closeNav() {
+    this.sideNavService.closeNav();
+  }
 
 }

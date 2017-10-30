@@ -3,11 +3,11 @@
     <div class="row side-nav" >
 
       <div *ngIf="!showNav" class="columns large-1 medium-1 small-1">
-        <button (click)="onShowNav()">&#9776; </button>
+        <button class="hamburgerIcon" (click)="onShowNav()">&#9776; </button>
       </div>
 
       <div *ngIf="showNav" class="columns large-2 medium-2 small-5">
-          <button (click)="onShowNav()">&#9776;</button>
+          <button class="hamburgerIcon" (click)="onShowNav()">&#9776;</button>
         <a id="logo" [routerLink]="'/'" (click)="onShowNav()">Portfolio</a>
   
         <ul>

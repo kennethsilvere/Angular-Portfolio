@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { trigger,state,style,transition,animate,keyframes} from '@angular/animations';
 import { NgForm } from '@angular/forms';
 import { ProductsService } from './products.service';
+import { SidenavService } from '../sidenav/sidenav.service';
 
 @Component({
   selector: 'app-products',
@@ -24,13 +25,16 @@ import { ProductsService } from './products.service';
 })
 export class ProductsComponent {
 
-  constructor(private productService: ProductsService){}
+  constructor(private productService: ProductsService,
+              private sideNavService: SidenavService){}
   
   products = this.productService.products;
 
   title:string = '';
   description:string = '';
   state = 'active';
+
+  listPosition: string = window.innerWidth < 640 ? 'below' : 'on the right';
 
   addProduct(form: NgForm) {
     var product = {'title': form.value.title, 'description': form.value.description}
@@ -43,4 +47,7 @@ export class ProductsComponent {
     this.productService.removeProduct(i);
   }
 
+  closeNav() {
+    this.sideNavService.closeNav();
+  }
 }

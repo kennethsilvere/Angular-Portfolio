@@ -17,6 +17,7 @@ import { EducationComponent } from './education/education.component';
 import { AboutAppComponent } from './about-app/about-app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
+import { SidenavService } from './sidenav/sidenav.service';
 
 
 const appRoutes: Routes = [
@@ -52,7 +53,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    ProductsService
+    ProductsService,
+    SidenavService
   ],
   bootstrap: [AppComponent]
 })
