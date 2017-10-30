@@ -67,8 +67,7 @@ ul li img {
     display:block;
     font-weight:bold;
     margin-top:20px;
-    padding:15px 0;
-    width:90%;
+    padding: 15px;
 }
 
 #results-label {
