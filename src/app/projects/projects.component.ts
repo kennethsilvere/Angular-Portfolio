@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
-  closeNav(){
+  closeNav() {
     this.sideNavService.closeNav();
   }
 }

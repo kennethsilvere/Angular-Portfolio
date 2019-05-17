@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { trigger,state,style,transition,animate,keyframes} from '@angular/animations';
+import { Component } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 import { NgForm } from '@angular/forms';
 import { ProductsService } from './products.service';
 import { SidenavService } from '../sidenav/sidenav.service';
@@ -26,18 +26,16 @@ import { SidenavService } from '../sidenav/sidenav.service';
 export class ProductsComponent {
 
   constructor(private productService: ProductsService,
-              private sideNavService: SidenavService){}
-  
+              private sideNavService: SidenavService) {}
+
   products = this.productService.products;
-
-  title:string = '';
-  description:string = '';
+  title = '';
+  description = '';
   state = 'active';
-
   listPosition: string = window.innerWidth < 640 ? 'below' : 'on the right';
 
   addProduct(form: NgForm) {
-    var product = {'title': form.value.title, 'description': form.value.description}
+    const product = {'title': form.value.title, 'description': form.value.description}
     this.productService.addProduct(product);
     this.title = '';
     this.description = '';

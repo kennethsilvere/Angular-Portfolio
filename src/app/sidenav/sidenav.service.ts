@@ -3,7 +3,7 @@ import { Subject } from 'rxjs/Subject';
 export class SidenavService {
     sideNavButton = new Subject<boolean>();
 
-    private showNav: boolean = true;
+    private showNav = true;
 
     toggleSideNav() {
         this.sideNavButton.next(this.showNav);

@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,14 +20,14 @@ import { SidenavService } from './sidenav/sidenav.service';
 
 
 const appRoutes: Routes = [
-  { path:'', redirectTo:'about', pathMatch:'full' },
-  { path:'products', component: ProductsComponent },
-  { path:'about', component: AboutComponent },
-  { path:'skills', component: SkillsComponent },
-  { path:'projects', component: ProjectsComponent },
-  { path:'experience', component: ExperienceComponent },
-  { path:'education', component: EducationComponent },
-  { path:'aboutapp', component: AboutAppComponent }
+  { path: '', redirectTo: 'about', pathMatch: 'full' },
+  { path: 'products', component: ProductsComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'experience', component: ExperienceComponent },
+  { path: 'education', component: EducationComponent },
+  { path: 'aboutapp', component: AboutAppComponent }
 ];
 
 
