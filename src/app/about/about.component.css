@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 , .contact{
     background-color:#2A3031;
     border-radius: 20%;
     color: white;
@@ -11,9 +11,9 @@ h1 {
     font-size: 2.7em;
 }
 
-h2{    
+h2{
     font-size: 1.7em;
-    width: 260px;
+    width: 290px;
 }
 
 h3{
@@ -26,7 +26,7 @@ h4 {
     width: 190px;
 }
 
-h5{
+h5 {
     font-size: 0.8em;
     width: 100px;
 }
@@ -50,22 +50,22 @@ h5{
     margin-top: 27px;
     padding-top: 13px;
     text-align: center;
+    max-width: 100vw !important;
 }
 
 .features li{
     color: white;
 }
 
-.foot {
+.contact-me {
     margin-top: 27px;
+    padding-top: 13px;
     text-align: center;
-    font-size: 13px;
+    max-width: 100vw !important;
 }
 
-.foot a {
-    color: white;
-}
-
-.foot a:hover {
-    color: #95989A;
+.secondary {
+    background-color:#2A3031;
+    margin-left: 10px;
+    margin-right: 10px;
 }
